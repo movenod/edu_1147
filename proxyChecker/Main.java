@@ -53,11 +53,11 @@ public class Main {
             // Читаем ответ от сервера пока не встретится null
             while ((inputLine = in.readLine()) != null) {
                 System.out.println("IP: " + inputLine + " - работает!");
-                System.out.println("IP: " + inputLine + " - работает!!!!");
+                //System.out.println("IP: " + inputLine + " - работает!!!!");
                 //System.out.println("IP: " + result + " HHH " +ip+ " - работает!!!!");
                 // запись адресов в файл
 
-                String text = "Hello world";
+                String text = ip+":"+port+"\n";
                 try{
                     FileOutputStream fos = new FileOutputStream("C:/java/good_ip.txt",true);
                     byte[] buffer = text.getBytes();
