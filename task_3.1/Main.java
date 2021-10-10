@@ -12,13 +12,9 @@ public class Main {
     public static int min(int a, int b, int c) {
         //напишите тут ваш код
 
-        int min =a ;
-        if (a<=b && a<=c)
-            min = a;
-        else if (a>=b && b<=c)
-            min =b;
-        else if (c<=a && b>=c)
-            min = c;
+        int min = a;
+        if (min > b) min = b;
+        if (min > c) min = c;
         return min;
     }
 
